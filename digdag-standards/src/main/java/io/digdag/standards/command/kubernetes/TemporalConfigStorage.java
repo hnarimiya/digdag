@@ -75,4 +75,14 @@ public class TemporalConfigStorage
             throw ThrowablesUtil.propagate(e);
         }
     }
+
+    public Long getDirectDownloadExpiration()
+    {
+        return storage.getDirectDownloadExpiration();
+    }
+
+    public Long getDirectUploadExpiration()
+    {
+        return storage.getDirectUploadExpiration();
+    }
 }
